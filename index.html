@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VisionMacro - Transformasi Bisnis Digital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1e3a8a',
+            secondary: '#3b82f6',
+            accent: '#10b981',
+            accent2: '#8b5cf6',
+          },
+          fontFamily: {
+            inter: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .hero-bg {
+      background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+      transition: all 0.3s ease;
+    }
+  </style>
+</head>
+<body class="font-inter bg-white">
+
+  <!-- Header -->
+  <header class="fixed w-full bg-white shadow-md z-50">
+    <nav class="max-w-7xl mx-auto px-8 py-4">
+      <div class="flex justify-between items-center">
+        <span class="text-2xl font-bold text-primary">VisionMacro</span>
+        <div class="hidden md:flex space-x-8">
+          <a href="#services" class="text-gray-600 hover:text-primary transition">Layanan</a>
+          <a href="#about" class="text-gray-600 hover:text-primary transition">Tentang</a>
+          <a href="#contact" class="text-gray-600 hover:text-primary transition">Kontak</a>
+        </div>
+        <a href="#contact" class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-secondary transition">
+          Konsultasi Gratis
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-bg text-white pt-36 pb-24">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="flex flex-col md:flex-row items-center gap-12">
+        <div class="md:w-1/2" data-aos="fade-right">
+          <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-snug">
+            Transformasi Bisnis dengan ERP, AI Automation, dan Data Training
+          </h1>
+          <p class="text-lg md:text-xl mb-8 opacity-90">
+            Kami membantu perusahaan beradaptasi di era digital melalui solusi ERP, otomatisasi berbasis AI, dan pelatihan keterampilan data.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a href="#contact" class="bg-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">
+              Konsultasi Gratis
+            </a>
+            <a href="#services" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition">
+              Pelajari Lebih
+            </a>
+          </div>
+        </div>
+        <div class="md:w-1/2" data-aos="fade-left">
+          <img src="http://static.photos/technology/640x360/1" alt="Digital Transformation" class="rounded-xl shadow-2xl">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-24 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Layanan Kami</h2>
+        <p class="text-lg md:text-xl text-gray-600">Solusi lengkap untuk transformasi digital bisnis Anda</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-10">
+        <!-- Card contoh (ERP) -->
+        <div class="service-card bg-white p-10 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="100">
+          <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+            <i data-feather="settings" class="text-primary w-8 h-8"></i>
+          </div>
+          <h3 class="text-2xl font-semibold text-primary mb-4">ERP Implementation</h3>
+          <p class="text-gray-600 mb-6">Optimasi alur bisnis dengan sistem ERP yang terintegrasi.</p>
+          <ul class="space-y-2 text-gray-600">
+            <li class="flex items-center"><i data-feather="check" class="text-accent mr-2 w-4 h-4"></i> Integrasi sistem lengkap</li>
+            <li class="flex items-center"><i data-feather="check" class="text-accent mr-2 w-4 h-4"></i> Customization sesuai kebutuhan</li>
+            <li class="flex items-center"><i data-feather="check" class="text-accent mr-2 w-4 h-4"></i> Support dan maintenance</li>
+          </ul>
+        </div>
+        <!-- Card AI -->
+        <div class="service-card bg-white p-10 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="200">
+          <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+            <i data-feather="cpu" class="text-accent w-8 h-8"></i>
+          </div>
+          <h3 class="text-2xl font-semibold text-primary mb-4">AI Automation</h3>
+          <p class="text-gray-600 mb-6">Automasi proses bisnis menggunakan AI untuk produktivitas lebih tinggi.</p>
+          <ul class="space-y-2 text-gray-600">
+            <li class="flex items-center"><i data-feather="check" class="text-accent mr-2 w-4 h-4"></i> Chatbot customer service</li>
+            <li class="flex items-center"><i data-feather="check" class="text-accent mr-2 w-4 h-4"></i> Automasi proses internal</li>
+            <li class="flex items-center"><i data-feather="check" class="text-accent mr-2 w-4 h-4"></i> Analytics dan reporting</li>
+          </ul>
+        </div>
+        <!-- Card Training -->
+        <div class="service-card bg-white p-10 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="300">
+          <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
+            <i data-feather="users" class="text-accent2 w-8 h-8"></i>
+          </div>
+          <h3 class="text-2xl font-semibold text-primary mb-4">Training & Upskilling</h3>
+          <p class="text-gray-600 mb-6">Kursus Python, Data Analytics, dan AI untuk pengembangan keterampilan karyawan.</p>
+          <ul class="space-y-2 text-gray-600">
+            <li class="flex items-center"><i data-feather="check" class="text-accent mr-2 w-4 h-4"></i> Python programming</li>
+            <li class="flex items-center"><i data-feather="check" class="text-accent mr-2 w-4 h-4"></i> Data analytics</li>
+            <li class="flex items-center"><i data-feather="check" class="text-accent mr-2 w-4 h-4"></i> AI dan machine learning</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="flex flex-col md:flex-row items-center gap-12">
+        <div class="md:w-1/2" data-aos="fade-right">
+          <img src="http://static.photos/office/640x360/2" alt="About VisionMacro" class="rounded-xl shadow-xl">
+        </div>
+        <div class="md:w-1/2" data-aos="fade-left">
+          <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6">Mengapa VisionMacro?</h2>
+          <p class="text-gray-600 mb-8 text-lg leading-relaxed">
+            Sebagai agency consulting terdepan, kami menghadirkan solusi digital transformasi yang komprehensif dengan tim ahli berpengalaman.
+          </p>
+          <div class="space-y-6">
+            <div class="flex items-center">
+              <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4">
+                <i data-feather="award" class="text-primary"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-primary">Expert Team</h4>
+                <p class="text-gray-600">Tim profesional dengan sertifikasi internasional</p>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <div class="w-12 h-12 bg-accent bg-opacity-10 rounded-full flex items-center justify-center mr-4">
+                <i data-feather="clock" class="text-accent"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-primary">Fast Implementation</h4>
+                <p class="text-gray-600">Proyek selesai tepat waktu dengan hasil maksimal</p>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <div class="w-12 h-12 bg-accent2 bg-opacity-10 rounded-full flex items-center justify-center mr-4">
+                <i data-feather="shield" class="text-accent2"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-primary">24/7 Support</h4>
+                <p class="text-gray-600">Dukungan teknis penuh setiap saat</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-24 bg-primary text-white">
+    <div class="max-w-7xl mx-auto px-8 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6" data-aos="fade-up">Siap transformasi bisnis Anda?</h2>
+      <p class="text-lg md:text-xl mb-8 opacity-90" data-aos="fade-up" data-aos-delay="100">
+        Hubungi VisionMacro hari ini dan mulailah perjalanan digital transformasi Anda
+      </p>
+      <a href="#contact" class="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-opacity-90 transition inline-block" data-aos="fade-up" data-aos-delay="200">
+        Mulai Sekarang
+      </a>
+    </div>
+  </section>
+
+    <!-- Contact Section -->
+  <section id="contact" class="py-24 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Hubungi Kami</h2>
+        <p class="text-lg md:text-xl text-gray-600">Konsultasi gratis untuk solusi bisnis Anda</p>
+      </div>
+
+      <!-- Konten Kontak di Tengah -->
+      <div class="flex justify-center">
+        <div class="bg-white p-10 rounded-2xl shadow-lg max-w-xl w-full text-center" data-aos="fade-up">
+          <h3 class="text-2xl font-semibold text-primary mb-6">Informasi Kontak</h3>
+          <div class="space-y-6">
+            <div class="flex items-center justify-center">
+              <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4">
+                <i data-feather="mail" class="text-primary"></i>
+              </div>
+              <div class="text-left">
+                <p class="text-gray-600">Email</p>
+                <p class="font-semibold">info@visionmacro.com</p>
+              </div>
+            </div>
+            <div class="flex items-center justify-center">
+              <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4">
+                <i data-feather="phone" class="text-primary"></i>
+              </div>
+              <div class="text-left">
+                <p class="text-gray-600">WhatsApp</p>
+                <p class="font-semibold">+62 812-3456-7890</p>
+              </div>
+            </div>
+            <div class="flex items-center justify-center">
+              <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4">
+                <i data-feather="map-pin" class="text-primary"></i>
+              </div>
+              <div class="text-left">
+                <p class="text-gray-600">Alamat</p>
+                <p class="font-semibold">Jl. Digital No. 123, Jakarta</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sosial Media -->
+          <div class="mt-8">
+            <h4 class="text-xl font-semibold text-primary mb-4">Follow Kami</h4>
+            <div class="flex justify-center space-x-4">
+              <a href="#" class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white hover:bg-secondary transition">
+                <i data-feather="facebook"></i>
+              </a>
+              <a href="#" class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white hover:bg-secondary transition">
+                <i data-feather="twitter"></i>
+              </a>
+              <a href="#" class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white hover:bg-secondary transition">
+                <i data-feather="linkedin"></i>
+              </a>
+              <a href="#" class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white hover:bg-secondary transition">
+                <i data-feather="instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="bg-primary text-white py-16">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="grid md:grid-cols-4 gap-12">
+        <div>
+          <h3 class="text-xl font-bold mb-6">VisionMacro</h3>
+          <p class="opacity-80 leading-relaxed">Partner terpercaya untuk transformasi digital bisnis Anda.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Layanan</h4>
+          <ul class="space-y-2 opacity-80">
+            <li><a href="#" class="hover:text-accent transition">ERP Implementation</a></li>
+            <li><a href="#" class="hover:text-accent transition">AI Automation</a></li>
+            <li><a href="#" class="hover:text-accent transition">Training & Upskilling</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Tautan</h4>
+          <ul class="space-y-2 opacity-80">
+            <li><a href="#services" class="hover:text-accent transition">Layanan</a></li>
+            <li><a href="#about" class="hover:text-accent transition">Tentang</a></li>
+            <li><a href="#contact" class="hover:text-accent transition">Kontak</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Kontak</h4>
+          <ul class="space-y-2 opacity-80">
+            <li>info@visionmacro.com</li>
+            <li>+62 812-3456-7890</li>
+            <li>Jl. Digital No. 123, Jakarta</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white border-opacity-20 mt-12 pt-8 text-center opacity-80">
+        <p>&copy; 2025 VisionMacro. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    AOS.init({ duration: 1000, once: true });
+    feather.replace();
+  </script>
+</body>
+</html>
