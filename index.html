@@ -40,6 +40,13 @@
       transform: translateY(-5px);
       transition: all 0.3s ease;
     }
+    .module-card {
+      transition: all 0.3s ease;
+    }
+    .module-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
   </style>
 </head>
 <body class="font-inter bg-white">
@@ -51,11 +58,13 @@
         <span class="text-2xl font-bold text-primary">VisionMacro</span>
         <div class="hidden md:flex space-x-8">
           <a href="#services" class="text-gray-600 hover:text-primary transition">Layanan</a>
+          <a href="#erp" class="text-gray-600 hover:text-primary transition">ERP</a>
           <a href="#about" class="text-gray-600 hover:text-primary transition">Tentang</a>
           <a href="#contact" class="text-gray-600 hover:text-primary transition">Kontak</a>
         </div>
-        <a href="#contact" class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-secondary transition">
-          Konsultasi Gratis
+        <a href="#contact" class="bg-primary text-white px-4 md:px-6 py-2 rounded-lg hover:bg-secondary transition">
+          <span class="md:hidden">Kontak</span>
+          <span class="hidden md:inline">Konsultasi Gratis</span>
         </a>
       </div>
     </nav>
@@ -70,19 +79,19 @@
             Transformasi Bisnis dengan ERP, AI Automation, dan Data Training
           </h1>
           <p class="text-lg md:text-xl mb-8 opacity-90">
-            Kami membantu perusahaan beradaptasi di era digital melalui solusi ERP, otomatisasi berbasis AI, dan pelatihan keterampilan data.
+            Kami membantu perusahaan beradaptasi di era digital melalui implementasi ERP, otomatisasi berbasis AI, dan pelatihan keterampilan data.
           </p>
           <div class="flex flex-wrap gap-4">
             <a href="#contact" class="bg-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">
               Konsultasi Gratis
             </a>
-            <a href="#services" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition">
-              Pelajari Lebih
+            <a href="#erp" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition">
+              Pelajari ERP
             </a>
           </div>
         </div>
         <div class="md:w-1/2" data-aos="fade-left">
-          <img src="http://static.photos/technology/640x360/1" alt="Digital Transformation" class="rounded-xl shadow-2xl">
+          <img src="erp.png" alt="Digital Transformation" class="rounded-xl shadow-2xl">
         </div>
       </div>
     </div>
@@ -102,11 +111,11 @@
             <i data-feather="settings" class="text-primary w-8 h-8"></i>
           </div>
           <h3 class="text-2xl font-semibold text-primary mb-4">ERP Implementation</h3>
-          <p class="text-gray-600 mb-6">Optimasi alur bisnis dengan sistem ERP yang terintegrasi.</p>
+          <p class="text-gray-600 mb-6">Optimasi alur bisnis dengan sistem ERP yang terintegrasi dan fleksibel.</p>
           <ul class="space-y-2 text-gray-600">
-            <li class="flex items-center"><i data-feather="check" class="text-accent mr-2 w-4 h-4"></i> Integrasi sistem lengkap</li>
-            <li class="flex items-center"><i data-feather="check" class="text-accent mr-2 w-4 h-4"></i> Customization sesuai kebutuhan</li>
-            <li class="flex items-center"><i data-feather="check" class="text-accent mr-2 w-4 h-4"></i> Support dan maintenance</li>
+            <li class="flex items-center"><i data-feather="check" class="text-accent mr-2 w-4 h-4"></i> Implementasi lengkap</li>
+            <li class="flex items-center"><i data-feather="check" class="text-accent mr-2 w-4 h-4"></i> Kustomisasi sesuai kebutuhan</li>
+            <li class="flex items-center"><i data-feather="check" class="text-accent mr-2 w-4 h-4"></i> Support dan maintenance berkelanjutan</li>
           </ul>
         </div>
         <!-- Card AI -->
@@ -139,17 +148,182 @@
     </div>
   </section>
 
+  <!-- ERP Section -->
+  <section id="erp" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Solusi ERP VisionMacro</h2>
+        <p class="text-lg md:text-xl text-gray-600">Tingkatkan efisiensi dan integrasi bisnis dengan sistem ERP yang komprehensif</p>
+      </div>
+      
+      <!-- Manfaat ERP -->
+      <div class="mb-20" data-aos="fade-up">
+        <h3 class="text-2xl md:text-3xl font-bold text-primary mb-8 text-center">Manfaat ERP</h3>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-gray-50 p-8 rounded-xl">
+            <ul class="space-y-4">
+              <li class="flex items-start">
+                <i data-feather="check-circle" class="text-accent mr-3 mt-1 w-5 h-5"></i>
+                <span class="text-gray-700">Integrasi data dan proses bisnis secara real-time</span>
+              </li>
+              <li class="flex items-start">
+                <i data-feather="check-circle" class="text-accent mr-3 mt-1 w-5 h-5"></i>
+                <span class="text-gray-700">Peningkatan efisiensi operasional hingga 40%</span>
+              </li>
+              <li class="flex items-start">
+                <i data-feather="check-circle" class="text-accent mr-3 mt-1 w-5 h-5"></i>
+                <span class="text-gray-700">Pengurangan biaya operasional dan inventory</span>
+              </li>
+              <li class="flex items-start">
+                <i data-feather="check-circle" class="text-accent mr-3 mt-1 w-5 h-5"></i>
+                <span class="text-gray-700">Laporan bisnis yang akurat dan real-time</span>
+              </li>
+            </ul>
+          </div>
+          <div class="bg-gray-50 p-8 rounded-xl">
+            <ul class="space-y-4">
+              <li class="flex items-start">
+                <i data-feather="check-circle" class="text-accent mr-3 mt-1 w-5 h-5"></i>
+                <span class="text-gray-700">Meningkatkan kolaborasi antar departemen</span>
+              </li>
+              <li class="flex items-start">
+                <i data-feather="check-circle" class="text-accent mr-3 mt-1 w-5 h-5"></i>
+                <span class="text-gray-700">Mendukung pengambilan keputusan yang lebih baik</span>
+              </li>
+              <li class="flex items-start">
+                <i data-feather="check-circle" class="text-accent mr-3 mt-1 w-5 h-5"></i>
+                <span class="text-gray-700">Skalabilitas untuk pertumbuhan bisnis</span>
+              </li>
+              <li class="flex items-start">
+                <i data-feather="check-circle" class="text-accent mr-3 mt-1 w-5 h-5"></i>
+                <span class="text-gray-700">Kepatuhan terhadap regulasi dan standar industri</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Modul ERP -->
+      <div data-aos="fade-up">
+        <h3 class="text-2xl md:text-3xl font-bold text-primary mb-8 text-center">Modul ERP yang Ditawarkan</h3>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Modul 1: Sales -->
+          <div class="module-card bg-white p-6 rounded-xl border border-gray-200">
+            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+              <i data-feather="shopping-cart" class="text-primary w-6 h-6"></i>
+            </div>
+            <h4 class="text-xl font-semibold text-primary mb-3">Penjualan</h4>
+            <p class="text-gray-600 mb-4">Kelola penjualan, pesanan, faktur, dan pelacakan penjualan dengan mudah.</p>
+            <div class="bg-blue-50 p-3 rounded-lg">
+              <p class="text-sm text-primary font-medium">Fitur Utama:</p>
+              <ul class="text-xs text-gray-600 mt-1 space-y-1">
+                <li>• Quotations & Sales Orders</li>
+                <li>• Invoicing & Payments</li>
+                <li>• Sales Reporting & Analytics</li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Modul 2: Accounting -->
+          <div class="module-card bg-white p-6 rounded-xl border border-gray-200">
+            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
+              <i data-feather="dollar-sign" class="text-accent w-6 h-6"></i>
+            </div>
+            <h4 class="text-xl font-semibold text-primary mb-3">Akuntansi</h4>
+            <p class="text-gray-600 mb-4">Otomatisasi proses akuntansi, kelola pembukuan, dan lacak transaksi keuangan.</p>
+            <div class="bg-green-50 p-3 rounded-lg">
+              <p class="text-sm text-accent font-medium">Fitur Utama:</p>
+              <ul class="text-xs text-gray-600 mt-1 space-y-1">
+                <li>• General Ledger & Chart of Accounts</li>
+                <li>• Bank Reconciliation</li>
+                <li>• Financial Reports & Tax Management</li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Modul 3: Inventory -->
+          <div class="module-card bg-white p-6 rounded-xl border border-gray-200">
+            <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+              <i data-feather="package" class="text-accent2 w-6 h-6"></i>
+            </div>
+            <h4 class="text-xl font-semibold text-primary mb-3">Inventori</h4>
+            <p class="text-gray-600 mb-4">Kelola stok, gudang, dan rantai pasokan dengan sistem real-time.</p>
+            <div class="bg-purple-50 p-3 rounded-lg">
+              <p class="text-sm text-accent2 font-medium">Fitur Utama:</p>
+              <ul class="text-xs text-gray-600 mt-1 space-y-1">
+                <li>• Stock Management & Valuation</li>
+                <li>• Warehouse Operations</li>
+                <li>• Reordering Rules & Inventory Reports</li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Modul 4: HR -->
+          <div class="module-card bg-white p-6 rounded-xl border border-gray-200">
+            <div class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mb-4">
+              <i data-feather="users" class="text-yellow-600 w-6 h-6"></i>
+            </div>
+            <h4 class="text-xl font-semibold text-primary mb-3">Sumber Daya Manusia</h4>
+            <p class="text-gray-600 mb-4">Kelola rekrutmen, absensi, penggajian, dan pengembangan karyawan.</p>
+            <div class="bg-yellow-50 p-3 rounded-lg">
+              <p class="text-sm text-yellow-600 font-medium">Fitur Utama:</p>
+              <ul class="text-xs text-gray-600 mt-1 space-y-1">
+                <li>• Employee Records & Contracts</li>
+                <li>• Payroll & Attendance</li>
+                <li>• Recruitment & Appraisals</li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Modul 5: Manufacturing -->
+          <div class="module-card bg-white p-6 rounded-xl border border-gray-200">
+            <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mb-4">
+              <i data-feather="tool" class="text-red-500 w-6 h-6"></i>
+            </div>
+            <h4 class="text-xl font-semibold text-primary mb-3">Manufaktur</h4>
+            <p class="text-gray-600 mb-4">Kelola proses manufaktur, perencanaan produksi, dan kontrol kualitas.</p>
+            <div class="bg-red-50 p-3 rounded-lg">
+              <p class="text-sm text-red-500 font-medium">Fitur Utama:</p>
+              <ul class="text-xs text-gray-600 mt-1 space-y-1">
+                <li>• Bill of Materials & Work Orders</li>
+                <li>• Production Planning & Scheduling</li>
+                <li>• Quality Control & Maintenance</li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Modul 6: Project -->
+          <div class="module-card bg-white p-6 rounded-xl border border-gray-200">
+            <div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mb-4">
+              <i data-feather="clipboard" class="text-indigo-500 w-6 h-6"></i>
+            </div>
+            <h4 class="text-xl font-semibold text-primary mb-3">Project</h4>
+            <p class="text-gray-600 mb-4">Kelola proyek, tugas, dan kolaborasi tim dengan mudah.</p>
+            <div class="bg-indigo-50 p-3 rounded-lg">
+              <p class="text-sm text-indigo-500 font-medium">Fitur Utama:</p>
+              <ul class="text-xs text-gray-600 mt-1 space-y-1">
+                <li>• Project Planning & Tasks</li>
+                <li>• Timesheets & Collaboration</li>
+                <li>• Project Reporting & Invoicing</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- About Section -->
-  <section id="about" class="py-24 bg-white">
+  <section id="about" class="py-24 bg-gray-50">
     <div class="max-w-7xl mx-auto px-8">
       <div class="flex flex-col md:flex-row items-center gap-12">
         <div class="md:w-1/2" data-aos="fade-right">
-          <img src="http://static.photos/office/640x360/2" alt="About VisionMacro" class="rounded-xl shadow-xl">
+          <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80" alt="About VisionMacro" class="rounded-xl shadow-xl">
         </div>
         <div class="md:w-1/2" data-aos="fade-left">
           <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6">Mengapa VisionMacro?</h2>
           <p class="text-gray-600 mb-8 text-lg leading-relaxed">
-            Sebagai agency consulting terdepan, kami menghadirkan solusi digital transformasi yang komprehensif dengan tim ahli berpengalaman.
+            Sebagai Odoo Gold Partner terdepan, kami menghadirkan solusi digital transformasi yang komprehensif dengan tim ahli berpengalaman.
           </p>
           <div class="space-y-6">
             <div class="flex items-center">
@@ -157,8 +331,8 @@
                 <i data-feather="award" class="text-primary"></i>
               </div>
               <div>
-                <h4 class="font-semibold text-primary">Expert Team</h4>
-                <p class="text-gray-600">Tim profesional dengan sertifikasi internasional</p>
+                <h4 class="font-semibold text-primary">Gold Partner</h4>
+                <p class="text-gray-600">Partner resmi dengan sertifikasi internasional</p>
               </div>
             </div>
             <div class="flex items-center">
@@ -190,7 +364,7 @@
     <div class="max-w-7xl mx-auto px-8 text-center">
       <h2 class="text-3xl md:text-4xl font-bold mb-6" data-aos="fade-up">Siap transformasi bisnis Anda?</h2>
       <p class="text-lg md:text-xl mb-8 opacity-90" data-aos="fade-up" data-aos-delay="100">
-        Hubungi VisionMacro hari ini dan mulailah perjalanan digital transformasi Anda
+        Hubungi VisionMacro hari ini dan mulailah perjalanan digital transformasi Anda dengan ERP
       </p>
       <a href="#contact" class="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-opacity-90 transition inline-block" data-aos="fade-up" data-aos-delay="200">
         Mulai Sekarang
@@ -198,8 +372,8 @@
     </div>
   </section>
 
-    <!-- Contact Section -->
-  <section id="contact" class="py-24 bg-gray-50">
+  <!-- Contact Section -->
+  <section id="contact" class="py-24 bg-white">
     <div class="max-w-7xl mx-auto px-8">
       <div class="text-center mb-16">
         <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Hubungi Kami</h2>
@@ -211,34 +385,28 @@
         <div class="bg-white p-10 rounded-2xl shadow-lg max-w-xl w-full text-center" data-aos="fade-up">
           <h3 class="text-2xl font-semibold text-primary mb-6">Informasi Kontak</h3>
           <div class="space-y-6">
-            <div class="flex items-center justify-center">
-              <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4">
-                <i data-feather="mail" class="text-primary"></i>
-              </div>
-              <div class="text-left">
-                <p class="text-gray-600">Email</p>
-                <p class="font-semibold">info@visionmacro.com</p>
-              </div>
+          <!-- Email -->
+          <div class="flex items-center">
+            <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4">
+              <i data-feather="mail" class="text-primary"></i>
             </div>
-            <div class="flex items-center justify-center">
-              <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4">
-                <i data-feather="phone" class="text-primary"></i>
-              </div>
-              <div class="text-left">
-                <p class="text-gray-600">WhatsApp</p>
-                <p class="font-semibold">+62 812-3456-7890</p>
-              </div>
-            </div>
-            <div class="flex items-center justify-center">
-              <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4">
-                <i data-feather="map-pin" class="text-primary"></i>
-              </div>
-              <div class="text-left">
-                <p class="text-gray-600">Alamat</p>
-                <p class="font-semibold">Jl. Digital No. 123, Jakarta</p>
-              </div>
+            <div class="flex flex-col items-start">
+              <p class="text-gray-600 leading-tight">Email</p>
+              <p class="font-semibold leading-tight">info@visionmacro.id</p>
             </div>
           </div>
+          <!-- WhatsApp -->
+          <div class="flex items-center">
+            <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4">
+              <i data-feather="phone" class="text-primary"></i>
+            </div>
+            <div class="flex flex-col items-start">
+              <p class="text-gray-600 leading-tight">WhatsApp</p>
+              <p class="font-semibold leading-tight">+62 812-9614-3413</p>
+            </div>
+          </div>
+      
+        </div>
 
           <!-- Sosial Media -->
           <div class="mt-8">
@@ -263,7 +431,6 @@
     </div>
   </section>
 
-
   <!-- Footer -->
   <footer class="bg-primary text-white py-16">
     <div class="max-w-7xl mx-auto px-8">
@@ -275,15 +442,16 @@
         <div>
           <h4 class="font-semibold mb-4">Layanan</h4>
           <ul class="space-y-2 opacity-80">
-            <li><a href="#" class="hover:text-accent transition">ERP Implementation</a></li>
-            <li><a href="#" class="hover:text-accent transition">AI Automation</a></li>
-            <li><a href="#" class="hover:text-accent transition">Training & Upskilling</a></li>
+            <li><a href="#services" class="hover:text-accent transition">ERP Implementation</a></li>
+            <li><a href="#services" class="hover:text-accent transition">AI Automation</a></li>
+            <li><a href="#services" class="hover:text-accent transition">Training & Upskilling</a></li>
           </ul>
         </div>
         <div>
           <h4 class="font-semibold mb-4">Tautan</h4>
           <ul class="space-y-2 opacity-80">
             <li><a href="#services" class="hover:text-accent transition">Layanan</a></li>
+            <li><a href="#erp" class="hover:text-accent transition">ERP</a></li>
             <li><a href="#about" class="hover:text-accent transition">Tentang</a></li>
             <li><a href="#contact" class="hover:text-accent transition">Kontak</a></li>
           </ul>
@@ -291,9 +459,8 @@
         <div>
           <h4 class="font-semibold mb-4">Kontak</h4>
           <ul class="space-y-2 opacity-80">
-            <li>info@visionmacro.com</li>
-            <li>+62 812-3456-7890</li>
-            <li>Jl. Digital No. 123, Jakarta</li>
+            <li>info@visionmacro.id</li>
+            <li>+62 812-9614-3413</li>
           </ul>
         </div>
       </div>
